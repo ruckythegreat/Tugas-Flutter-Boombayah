@@ -13,13 +13,13 @@ class HalColumn extends StatelessWidget {
         body: Column(
           children: [
             Container(margin: EdgeInsets.all(10),
-            child: Center(child: Text("Wow", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24),)),
                   width: 100,
                   height: 200,
                   decoration: BoxDecoration(
                     color: const Color.fromARGB(255, 127, 172, 249),
                     borderRadius: BorderRadius.circular(10)
                     ),
+            child: Center(child: Text("Wow", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24),)),
                     ),
                     Container(margin: EdgeInsets.all(10),
                   width: 100,
@@ -31,13 +31,13 @@ class HalColumn extends StatelessWidget {
                     ),
 Container(margin: EdgeInsets.all(10),
 alignment: Alignment.center,
-child: Text("data"),
                   width: 200,
                   height: 100,
                   decoration: BoxDecoration(
                     color: const Color.fromARGB(255, 127, 172, 249),
                     borderRadius: BorderRadius.circular(15)
                     ),
+child: Text("data"),
                     ),
           ],
         )

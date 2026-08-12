@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HalColumn extends StatelessWidget {
-  const HalColumn({super.key});
+class HalScroll extends StatelessWidget {
+  const HalScroll({super.key});
 
   @override
   Widget build(BuildContext context) {

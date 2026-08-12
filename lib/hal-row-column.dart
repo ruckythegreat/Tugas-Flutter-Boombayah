@@ -69,6 +69,22 @@ class Halrowcolumn extends StatelessWidget {
 
             ],
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                  width: 100,
+                  height: 100,
+                  decoration: BoxDecoration(
+                    color: const Color.fromARGB(255, 127, 172, 249),
+                    borderRadius: BorderRadius.circular(10)
+                    ),
+                    ),
+
+            ],
+            ),
+            
+
           ],
         ),
       );

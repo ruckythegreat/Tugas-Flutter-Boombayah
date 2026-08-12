@@ -6,7 +6,7 @@ import 'package:flutter_project1/hal-image.dart';
 import 'package:flutter_project1/hal-row-column.dart';
 import 'package:flutter_project1/hal-row.dart';
 import 'package:flutter_project1/Icon.dart';
-
+import 'package:flutter_project1/Scroll.dart';
 class Menuutama extends StatelessWidget {
   const Menuutama({super.key});
 
@@ -25,7 +25,7 @@ class Menuutama extends StatelessWidget {
           }, child: Text("Container")),
           ElevatedButton(onPressed: (){
           Navigator.push(context, MaterialPageRoute(builder: (context) => Halrowcolumn() ));
-          }, child: Text("Row & Column")),
+          }, child: Text("Row & Column (Test)")),
           ElevatedButton(onPressed: (){
           Navigator.push(context, MaterialPageRoute(builder: (context) => HalText() ));
           }, child: Text("Text")),
@@ -40,7 +40,10 @@ class Menuutama extends StatelessWidget {
           }, child: Text("Column")),
           ElevatedButton(onPressed: (){
           Navigator.push(context, MaterialPageRoute(builder: (context) => HalIcon() ));
-          }, child: Text("Icon"))
+          }, child: Text("Icon")),
+          ElevatedButton(onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => HalScroll() ));
+          }, child: Text("Scroll"))
         ],
         
       ),

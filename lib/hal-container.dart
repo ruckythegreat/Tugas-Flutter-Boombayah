@@ -11,13 +11,22 @@ class halContainer extends StatelessWidget {
       ),
       
         body: Container(
-          padding:EdgeInsets.all(100),
-          margin: EdgeInsets.all(10),
-          width: 200,
-          height: 200,
+
+          padding:EdgeInsets.all(10),
+          margin: EdgeInsets.only(left: 10, right: 10, bottom: 10, top: 10),
+
           decoration: BoxDecoration(
-            color: Colors.blueAccent,
-            borderRadius: BorderRadius.circular(10)
+            color: Colors.yellow,
+            borderRadius: BorderRadius.circular(20),
+            boxShadow: [
+              BoxShadow(
+                offset: Offset(10, 0),
+                color: Colors.grey.shade200,
+                blurRadius: 20,
+                spreadRadius: 4
+              )
+            ],
+            border: BoxBorder.all(color: Colors.black,width: 1, strokeAlign: 12)
             ),
         ),
 

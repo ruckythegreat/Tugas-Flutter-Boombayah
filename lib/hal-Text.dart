@@ -10,7 +10,15 @@ class HalText extends StatelessWidget {
         title: Text("Rucky"),
       ),
       
-        body: Text("GDAGADGAGGAGGAGAGSJGHDSAGHJHJGHSAJGHSAHGJAHJGDSHHJGADGHASHGDHADGGHJAJHHSA")
+        body: Text("Dadang362",
+        style: TextStyle(
+
+          color: Colors.green,
+          fontWeight: FontWeight.bold,
+          fontSize: 50
+
+        ),
+        )
       );
   }
 }

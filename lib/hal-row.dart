@@ -10,31 +10,23 @@ class Halrow extends StatelessWidget {
         title: Text("Rucky"),
       ),
       
-        body: Row(
+        body: Row( mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Container(margin: EdgeInsets.all(10),
+            Container(
                   width: 100,
                   height: 100,
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 127, 172, 249),
-                    borderRadius: BorderRadius.circular(10)
+                  color: Colors.orange,
                     ),
-                    ),
-                    Container(margin: EdgeInsets.all(10),
+            Container(
                   width: 100,
                   height: 100,
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 127, 172, 249),
-                    borderRadius: BorderRadius.circular(10)
+                  color: Colors.red,
                     ),
-                    ),
-Container(margin: EdgeInsets.all(10),
+            Container(
                   width: 100,
                   height: 100,
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 127, 172, 249),
-                    borderRadius: BorderRadius.circular(10)
-                    ),
+                  color: Colors.green,
                     ),
           ],
         )

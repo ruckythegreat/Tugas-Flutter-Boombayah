@@ -9,83 +9,20 @@ class HalColumn extends StatelessWidget {
       appBar: AppBar(
         title: Text("Rucky"),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Container(
-              margin: EdgeInsets.all(10),
-              width: 100,
-              height: 200,
-              decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 127, 172, 249),
-                borderRadius: BorderRadius.circular(10),
-              ),
-              child: Center(
-                child: Text(
-                  "Wow",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 24,
-                  ),
-                ),
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.all(10),
-              width: 100,
-              height: 100,
-              decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 127, 172, 249),
-                borderRadius: BorderRadius.circular(10),
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.all(10),
-              alignment: Alignment.center,
-              width: 200,
-              height: 100,
-              decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 127, 172, 249),
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Text("data"),
-            ),
-            Container(
-              margin: EdgeInsets.all(10),
-              alignment: Alignment.center,
-              width: 200,
-              height: 100,
-              decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 127, 172, 249),
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Text("data"),
-            ),
-            Container(
-              margin: EdgeInsets.all(10),
-              alignment: Alignment.center,
-              width: 200,
-              height: 100,
-              decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 127, 172, 249),
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Text("data"),
-            ),
-            Container(
-              margin: EdgeInsets.all(10),
-              alignment: Alignment.center,
-              width: 200,
-              height: 100,
-              decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 127, 172, 249),
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Text("data"),
-            ),
-          ],
-        ),
+      body:
+      Padding(padding: const EdgeInsetsGeometry.all(20.0),
+      child:
+        Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+
+        children: [
+          Container(width: 100, height: 100,color: Colors.orange,),
+          Container(width: 100, height: 100,color: Colors.red,),
+          Container(width: 100, height: 100,color: Colors.green,),
+        ],
+      )
+      
       )
     );
   }

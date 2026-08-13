@@ -12,19 +12,20 @@ class Latihandua extends StatelessWidget {
         child: TitleRucky(),
       ),
       body: Container(
-        decoration: BoxDecoration(color: Color.fromARGB(255, 227, 205, 255)),
+        decoration: const BoxDecoration(
+          color: Color.fromARGB(255, 227, 205, 255),
+        ),
         child: Column(
           children: [
             Container(
               width: MediaQuery.of(context).size.width,
-              height: 200,
-              decoration: BoxDecoration(
-                color: const Color.fromARGB(255, 168, 101, 255),
-                borderRadius: const BorderRadius.all(Radius.circular(20)),
+              height: 250,
+              decoration: const BoxDecoration(
+                color: Color.fromARGB(255, 168, 101, 255),
+                borderRadius: BorderRadius.all(Radius.circular(20)),
               ),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
-
                 children: [
                   Container(
                     margin: const EdgeInsets.all(15),
@@ -33,12 +34,9 @@ class Latihandua extends StatelessWidget {
                       color: Color.fromARGB(255, 255, 253, 253),
                     ),
                   ),
-
                   Expanded(
                     child: Center(child: Image.asset("images/gambar4.jpg")),
                   ),
-
-                  // Ikon Kanan
                   Container(
                     margin: const EdgeInsets.all(15),
                     child: const Icon(
@@ -49,88 +47,131 @@ class Latihandua extends StatelessWidget {
                 ],
               ),
             ),
+
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         "How To Pet a Cat",
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
-
                       Row(
                         children: [
                           Container(
-                            margin: EdgeInsets.only(right: 10),
-                            child: Text(
+                            margin: const EdgeInsets.only(right: 10),
+                            child: const Text(
                               "By Rucky XI RPL 1",
                               style: TextStyle(
-                                color: const Color.fromARGB(255, 78, 78, 78),
+                                color: Color.fromARGB(255, 78, 78, 78),
                                 fontSize: 10,
                               ),
                             ),
                           ),
-                          Icon(
+                          const Icon(
                             Icons.timer,
-                            color: const Color.fromARGB(255, 78, 78, 78),
+                            color: Color.fromARGB(255, 78, 78, 78),
                             size: 13,
                           ),
-                          Text(
-                            "20 minute ago",
+                          const Text(
+                            " 20 minute ago",
                             style: TextStyle(
                               fontSize: 10,
-                              color: const Color.fromARGB(255, 78, 78, 78),
+                              color: Color.fromARGB(255, 78, 78, 78),
                             ),
                           ),
                         ],
                       ),
                     ],
                   ),
-                  Stack(
-                    children: [
-                      // Perbesar ukuran Container dasar atau sesuaikan dengan kebutuhan
-                      Container(width: 120, height: 120, color: const Color.fromARGB(0, 33, 149, 243)),
-                      // Posisi gambar ditumpuk di atasnya
-                      Positioned(
-                        top: 20,
-                        left: 20,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(40.0),
-                          child: Image.asset(
-                            "images/gambar5.jpg",
-                            width: 80,
-                            height: 80,
-                            fit: BoxFit.cover,
+
+                  const Spacer(),
+
+                  Padding(
+                    padding: const EdgeInsets.only(right: 10.0),
+                    child: SizedBox(
+                      width: 80,
+                      height: 40,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            top: 0,
+                            left: 0,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(40.0),
+                              child: Image.asset(
+                                "images/gambar3.jpg",
+                                width: 40,
+                                height: 40,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
                           ),
-                        ),
-                      ),
-                      Positioned(
-                        top: 20,
-                        left: 40,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(40.0),
-                          child: Image.asset(
-                            "images/gambar5.jpg",
-                            width: 80,
-                            height: 80,
-                            fit: BoxFit.cover,
+                          Positioned(
+                            top: 0,
+                            left: 20,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(40.0),
+                              child: Image.asset(
+                                "images/gambar6.jpg",
+                                width: 40,
+                                height: 40,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
                           ),
-                        ),
+                          Positioned(
+                            top: 0,
+                            left: 40,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(40.0),
+                              child: Image.asset(
+                                "images/gambar5.jpg",
+                                width: 40,
+                                height: 40,
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
-                    ],
+                    ),
                   ),
                 ],
               ),
             ),
-            Expanded(
+
+            const Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(10.0),
+                padding: EdgeInsets.all(10.0),
                 child: Text(
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                  style: const TextStyle(fontSize: 10),
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                  style: TextStyle(fontSize: 10),
+                ),
+              ),
+            ),
+Padding(
+              // Memberi jarak di kiri, kanan, dan bawah agar rapi
+              padding: const EdgeInsets.only(left: 10, right: 10, bottom: 40),
+              child: ElevatedButton(
+                onPressed: () {
+                  print("tes");
+                },
+                style: ElevatedButton.styleFrom(
+                  minimumSize: Size(180, 40),
+                  backgroundColor: const Color.fromARGB(255, 255, 192, 46),
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
+                child: const Text(
+                  "Read More",
+                  style: TextStyle(fontSize: 16),
                 ),
               ),
             ),

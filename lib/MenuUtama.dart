@@ -11,8 +11,8 @@ import 'package:flutter_project1/app-bar.dart';
 import 'package:flutter_project1/container-new.dart';
 import 'package:flutter_project1/Latihan-satu.dart';
 import 'package:flutter_project1/Latihan-Dua.dart';
-import 'package:flutter_project1/Test-menu.dart';
-import 'package:flutter_project1/menu-latihan.dart';
+import 'package:flutter_project1/Latihan-Stack-Positioned.dart';
+import 'package:flutter_project1/Ticket-page-1.dart';
 import 'package:flutter_project1/Latihan-Tiga.dart';
 
 class Menuutama extends StatelessWidget {
@@ -29,7 +29,8 @@ class Menuutama extends StatelessWidget {
 
       body:
       
-       Center(
+       Center(child: 
+               SingleChildScrollView(
         child: Column( 
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -79,10 +80,18 @@ class Menuutama extends StatelessWidget {
 
           ElevatedButton(onPressed: (){
             Navigator.push(context, MaterialPageRoute(builder: (context) => Latihantiga() ));
-          }, child: Text("Latihan 3"))
+          }, child: Text("Latihan 3")),
+
+          ElevatedButton(onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => LatihanStackPositioned() ));
+          }, child: Text("Latihan Stack & Positioned")),
+
+          ElevatedButton(onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => TicketPage1() ));
+          }, child: Text("Latihan Ticket Page 1")),
 
         ],
-        
+        )
       ),
       ),
       );

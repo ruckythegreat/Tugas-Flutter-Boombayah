@@ -9,14 +9,9 @@ import 'package:flutter_project1/Icon.dart';
 import 'package:flutter_project1/Scroll.dart';
 import 'package:flutter_project1/app-bar.dart';
 import 'package:flutter_project1/container-new.dart';
-import 'package:flutter_project1/Latihan-satu.dart';
-import 'package:flutter_project1/Latihan-Dua.dart';
-import 'package:flutter_project1/Test-menu.dart';
-import 'package:flutter_project1/menu-latihan.dart';
-import 'package:flutter_project1/Latihan-Tiga.dart';
 
-class Menuutama extends StatelessWidget {
-  const Menuutama({super.key});
+class MenuTest extends StatelessWidget {
+  const MenuTest({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,9 +21,8 @@ class Menuutama extends StatelessWidget {
         preferredSize: const Size.fromHeight(kToolbarHeight),
         child: TitleRucky(),),
 
-
-      body:
       
+        body: 
        Center(
         child: Column( 
         mainAxisAlignment: MainAxisAlignment.center,
@@ -68,18 +62,6 @@ class Menuutama extends StatelessWidget {
           ElevatedButton(onPressed: (){
             Navigator.push(context, MaterialPageRoute(builder: (context) => HalScroll() ));
           }, child: Text("Scroll")),
-
-          ElevatedButton(onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context) => Latihansatu() ));
-          }, child: Text("Latihan 1")),
-
-          ElevatedButton(onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context) => Latihandua() ));
-          }, child: Text("Latihan 2")),
-
-          ElevatedButton(onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context) => Latihantiga() ));
-          }, child: Text("Latihan 3"))
 
         ],
         

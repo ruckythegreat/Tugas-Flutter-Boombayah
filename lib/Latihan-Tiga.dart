@@ -4,7 +4,7 @@ class Latihantiga extends StatelessWidget {
   const Latihantiga({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget buildBuildContext context) {
     return Scaffold(
 
       

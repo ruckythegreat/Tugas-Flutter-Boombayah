@@ -107,7 +107,7 @@ class Latihansatu extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(
                       top: 20.0,
-                    ), // Atur besar jarak ke bawah di sini (misal: 4 atau 8)
+                    ),
                     child: Text(
                       "Nov 22, 2009",
                       style: TextStyle(

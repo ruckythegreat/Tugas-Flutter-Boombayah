@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_project1/Ticket-page-3.dart';
 class TicketPage2 extends StatelessWidget {
   const TicketPage2({super.key});
 
@@ -295,7 +295,7 @@ SizedBox(
   width: 200,
   child: ElevatedButton(
                           onPressed: () {
-                            print("tes");
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => TicketPage3() ));
                           },
                           style: ElevatedButton.styleFrom(
                             backgroundColor: const Color.fromARGB(255, 53, 164, 255),

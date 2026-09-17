@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project1/app-bar.dart';
 
-class LatihanStackPositioned extends StatelessWidget {
-  const LatihanStackPositioned({super.key});
+class Latihan1nagistackpositioned extends StatelessWidget {
+  const Latihan1nagistackpositioned({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,20 +15,13 @@ class LatihanStackPositioned extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            //################### ini kartu diskon #########################
             Center(
               child: Container(
                 margin: EdgeInsets.all(10),
                 width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height - 450,
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Color.fromARGB(255, 34, 119, 189),
-                    width: 2,
-                  ),
-
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                ),
-
+                decoration: BoxDecoration(border: Border.all(color: Color.fromARGB(255, 34, 119, 189), width: 2), borderRadius: BorderRadius.all(Radius.circular(15)),),
                 child: Column(
                   children: [
                     Container(
@@ -38,27 +31,23 @@ class LatihanStackPositioned extends StatelessWidget {
                         left: 2,
                         right: 2,
                       ),
-                      decoration: const BoxDecoration(
-                        color: Color.fromARGB(0, 255, 35, 35),
-                      ),
+                      decoration: BoxDecoration(color: Color.fromARGB(0, 255, 35, 35)),                                           //Rekayasa perangkat lunak Bandung
                       child: Stack(
-                        alignment: Alignment.center,
+                        alignment: Alignment.center,                                                                                //saya akan lawan!
                         children: [
                           Positioned(
                             child: Container(
                               width: MediaQuery.of(context).size.width,
-                              height: 220,
+                              height: 220,                                                                                          //udah bang saya malu
 
                               decoration: const BoxDecoration(
                                 color: Color.fromARGB(0, 188, 225, 255),
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(5),
-                                ),
+                                borderRadius: BorderRadius.all(Radius.circular(5)),                                                 //kami pelajar esempe en tujuh
                               ),
                             ),
                           ),
                           Positioned(
-                            child: Container(
+                            child:Container(
                               width: MediaQuery.of(context).size.width - 60,
                               height: 200,
 
@@ -69,7 +58,7 @@ class LatihanStackPositioned extends StatelessWidget {
                                 ),
                               ),
                             ),
-                          ),
+                            ),
                           Positioned(
                             bottom: 40,
                             top: 40,
@@ -104,11 +93,11 @@ class LatihanStackPositioned extends StatelessWidget {
                                 ),
                               ),
                             ),
-                          ),
-                        ],
+                            ),
+                          ],
                       ),
                     ),
-                    Container(
+                     Container(
                       width: MediaQuery.of(context).size.width,
                       margin: EdgeInsets.only(left: 30),
                       decoration: const BoxDecoration(
@@ -176,6 +165,7 @@ class LatihanStackPositioned extends StatelessWidget {
                 ),
               ),
             ),
+            //################### ini buat notifikasi ######################
             Center(
               child: Container(
                 margin: EdgeInsets.all(10),
@@ -187,7 +177,7 @@ class LatihanStackPositioned extends StatelessWidget {
                     width: 2,
                   ),
 
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
+                  borderRadius: BorderRadius.all(Radius.circular(15))
                 ),
                 child: Center(
                   child: Stack(
@@ -227,12 +217,13 @@ class LatihanStackPositioned extends StatelessWidget {
                             ),
                           ),
                         ),
-                      ),
+                      )
                     ],
                   ),
                 ),
               ),
             ),
+            //################### ini buat video ###########################
             Center(
               child: Container(
                 margin: EdgeInsets.all(10),
@@ -243,13 +234,11 @@ class LatihanStackPositioned extends StatelessWidget {
                     color: Color.fromARGB(255, 34, 119, 189),
                     width: 2,
                   ),
-
                   borderRadius: BorderRadius.all(Radius.circular(15)),
                 ),
                 child: Center(
                   child: Stack(
                     alignment: Alignment.center,
-
                     children: [
                       Positioned(
                         child: Container(
@@ -269,7 +258,6 @@ class LatihanStackPositioned extends StatelessWidget {
                               color: Color.fromARGB(255, 34, 119, 189),
                               width: 2,
                             ),
-
                             borderRadius: BorderRadius.all(Radius.circular(15)),
                           ),
                           child: Stack(
@@ -326,3 +314,31 @@ class LatihanStackPositioned extends StatelessWidget {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//bang saya lelah ini kodingannya panjang banget, huhuhuhuhuhu. 
+
+
+
+
+
+
+
+
+
+
+
+//mabar yuk

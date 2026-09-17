@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project1/app-bar.dart';
-import 'package:flutter_project1/latihan-1-nagi-component.dart';
+import 'package:flutter_project1/latihan-1-nagi-stack-positioned.dart';
 
 class Latihansatunagi extends StatelessWidget {
   const Latihansatunagi({super.key});

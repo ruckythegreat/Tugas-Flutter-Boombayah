@@ -15,6 +15,7 @@ import 'package:flutter_project1/Latihan-Stack-Positioned.dart';
 import 'package:flutter_project1/Ticket-page-1.dart';
 import 'package:flutter_project1/Latihan-Tiga.dart';
 import 'package:flutter_project1/latihan-1-nagi.dart';
+import 'package:flutter_project1/latihan-1-nagi-stack-positioned.dart';
 
 class Menuutama extends StatelessWidget {
   const Menuutama({super.key});
@@ -94,6 +95,11 @@ class Menuutama extends StatelessWidget {
           ElevatedButton(onPressed: (){
             Navigator.push(context, MaterialPageRoute(builder: (context) => Latihansatunagi() ));
           }, child: Text("Latihan satu nagi")),
+
+          ElevatedButton(onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Latihan1nagistackpositioned() ));
+          }, child: Text("Latihan dua nagi")),
+
 SizedBox(height: 100,)
         ],
         )

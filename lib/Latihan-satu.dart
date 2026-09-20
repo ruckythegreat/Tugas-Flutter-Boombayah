@@ -7,17 +7,37 @@ class Latihansatu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       appBar: PreferredSize(
         preferredSize: const Size.fromHeight(kToolbarHeight),
         child: TitleRucky(),
       ),
 
-      body: Container(decoration: const BoxDecoration(color: Color.fromARGB(255, 250, 245, 241),),child: Container(margin: EdgeInsets.only(top: 30, bottom: 30, left: 20, right: 20),decoration: BoxDecoration(color: Color.fromARGB(255, 250, 248, 246)),child: Column(children: [Row(children: [Container(decoration: BoxDecoration(color: Color.fromARGB(255, 176, 163, 153),borderRadius: BorderRadius.only(topLeft: Radius.circular(10),bottomLeft: Radius.circular(10),),),width: 130,height: 250,child: Expanded(
-  child: Image.asset(
-    "images/IMG_SEGMENT_20260813_100943.png",
-  ),
-),
+      body: Container(
+        decoration: const BoxDecoration(
+          color: Color.fromARGB(255, 250, 245, 241),
+        ),
+        child: Container(
+          margin: EdgeInsets.only(top: 30, bottom: 30, left: 20, right: 20),
+          decoration: BoxDecoration(color: Color.fromARGB(255, 250, 248, 246)),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Color.fromARGB(255, 176, 163, 153),
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(10),
+                        bottomLeft: Radius.circular(10),
+                      ),
+                    ),
+                    width: 130,
+                    height: 250,
+                    child: Expanded(
+                      child: Image.asset(
+                        "images/IMG_SEGMENT_20260813_100943.png",
+                      ),
+                    ),
                   ),
                   Expanded(
                     child: Container(
@@ -82,9 +102,7 @@ class Latihansatu extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(
-                      top: 20.0,
-                    ),
+                    padding: const EdgeInsets.only(top: 20.0),
                     child: Text(
                       "Nov 22, 2009",
                       style: TextStyle(

@@ -13,12 +13,13 @@ class TicketPage3 extends StatelessWidget {
             height: MediaQuery.of(context).size.height,
             decoration: const BoxDecoration(
               gradient: LinearGradient(
-                  begin: Alignment.centerLeft,
-                  end: Alignment.centerRight,
-                  colors: [
-                    Color.fromARGB(255, 40, 218, 253),
-                    Color.fromARGB(255, 1, 120, 255),
-                  ],),
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
+                colors: [
+                  Color.fromARGB(255, 40, 218, 253),
+                  Color.fromARGB(255, 1, 120, 255),
+                ],
+              ),
             ),
           ),
 
@@ -37,98 +38,100 @@ class TicketPage3 extends StatelessWidget {
 
                   const SizedBox(height: 50),
 
-SizedBox(
-  width: 300,
-  child: TextField(
-    textAlign: TextAlign.center,
+                  SizedBox(
+                    width: 300,
+                    child: TextField(
+                      textAlign: TextAlign.center,
 
-    style: const TextStyle(
-      color: Colors.blue,
-    ),
+                      style: const TextStyle(color: Colors.blue),
 
-    decoration: InputDecoration(
-      hintText: 'User',
+                      decoration: InputDecoration(
+                        hintText: 'User',
 
-      hintStyle: const TextStyle(
-        color: Colors.blue,
-      ),
+                        hintStyle: const TextStyle(color: Colors.blue),
 
-      filled: true,
-      fillColor: Colors.white,
+                        filled: true,
+                        fillColor: Colors.white,
 
-      border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(35),
-        borderSide: BorderSide.none,
-      ),
-    ),
-  ),
-),  
-SizedBox(height: 20,),
-SizedBox(
-  width: 300,
-  child: TextField(
-    textAlign: TextAlign.center,
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(35),
+                          borderSide: BorderSide.none,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  SizedBox(
+                    width: 300,
+                    child: TextField(
+                      textAlign: TextAlign.center,
 
-    style: const TextStyle(
-      color: Colors.blue,
-    ),
+                      style: const TextStyle(color: Colors.blue),
 
-    decoration: InputDecoration(
-      hintText: 'Password',
+                      decoration: InputDecoration(
+                        hintText: 'Password',
 
-      hintStyle: const TextStyle(
-        color: Colors.blue,
-      ),
+                        hintStyle: const TextStyle(color: Colors.blue),
 
-      filled: true,
-      fillColor: Colors.white,
+                        filled: true,
+                        fillColor: Colors.white,
 
-      border: OutlineInputBorder(
-        borderRadius: BorderRadius.circular(35),
-        borderSide: BorderSide.none,
-      ),
-    ),
-  ),
-),          
-SizedBox(height: 20,),
-SizedBox(
-            width: MediaQuery.of(context).size.width,
-  child: Row(
-    mainAxisAlignment: MainAxisAlignment.spaceAround,
-    
-    children: [
-  
-      Text("Create account", style: TextStyle(color: Colors.white),),
-      Text("Forgot Password?", style: TextStyle(color: Colors.white),)
-    ],
-  ),
-),
-SizedBox(height: 20,),
-SizedBox(
-  width: 300,
-  height: 50,
-  child: ElevatedButton(
-                            onPressed: () {
-                              print("object");
-                            },
-                            style: ElevatedButton.styleFrom(
-                              backgroundColor: Colors.white,
-                              foregroundColor: const Color.fromARGB(255, 53, 164, 255),
-                              shadowColor: null,
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(30),
-                              ),
-                            ),
-                            child: const Text(
-                              "Log In",
-                              style: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                          ),
-),
-           ],
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(35),
+                          borderSide: BorderSide.none,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  SizedBox(
+                    width: MediaQuery.of(context).size.width,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+
+                      children: [
+                        Text(
+                          "Create account",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                        Text(
+                          "Forgot Password?",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  SizedBox(
+                    width: 300,
+                    height: 50,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        print("object");
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.white,
+                        foregroundColor: const Color.fromARGB(
+                          255,
+                          53,
+                          164,
+                          255,
+                        ),
+                        shadowColor: null,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(30),
+                        ),
+                      ),
+                      child: const Text(
+                        "Log In",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ],
           ),
